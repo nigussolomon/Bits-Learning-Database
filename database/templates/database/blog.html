@@ -7,7 +7,7 @@
         <div class="blog">
             <div class="head">
                 <h3>{{blog.title}}</h3>
-                <h5>{{blog.user}}</h5>
+                <h5>@{{blog.user}}</h5>
             </div>
             <hr>
             <div class="blog_detail">
@@ -19,5 +19,14 @@
         </div>
     </div>  
     {% endfor %}
+
+    <div class="bloginput">
+        <form method = POST id="formblog">
+            <h1>Add your post</h1>
+            {% csrf_token %}
+            {{form}}
+            <button id="regbtn" type="submit">POST</button>
+        </form>
+    </div>
 </div>
 {% endblock bloglogin %}

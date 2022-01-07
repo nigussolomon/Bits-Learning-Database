@@ -146,3 +146,102 @@
     text-decoration: underline 3px #4989FF;
 }
 
+.bloginput{
+    position: fixed;
+    top: 15%;
+    left: 50%;
+}
+
+
+
+#formblog{
+    margin-top: 1.5%;
+    margin-left: 2%;
+    width: 60%;
+    padding-left: 2%;
+    border-left: 5px solid #4989FF;
+}
+
+#formblog h1{
+    color: rgb(255, 255, 255);
+    margin-bottom: 4%;
+}
+
+.helptext{
+    display: none;
+}
+
+#formblog li{
+    color: red;
+    padding: 1%;
+    list-style: none;
+    margin-bottom: 2%;
+    border: 2px solid red;
+}
+
+#formblog label{
+    font-weight: bold;
+    color: #4989FF;
+}
+
+#formblog input{
+    width: 100%;
+    padding: 3%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    border: white;
+    border-radius: 1px;
+}
+
+#id_blog{
+    width: 100%;
+    padding: 3%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    border: white;
+    border-radius: 2px;
+}
+
+#formblog input:focus{
+    outline: #4989FF;
+    box-shadow: 0 2px 3px 0 #4989FF;
+}
+
+#formblog input:active{
+    outline: none;
+    box-shadow: none;
+}
+
+#regbtn{
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 3%;
+    padding: 2%;
+    background: #4989FF;
+    color: #000317;
+    border: 1px #4989FF;
+    margin-bottom: 3%;
+}
+
+#regbtn:hover{
+    background: rgb(255, 255, 255);
+    color: #000317;
+}
+
+#formblog p{
+    color: rgb(165, 165, 165);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#formblog a{
+    color: #4989FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#formblog h3{
+    color: rgb(165, 165, 165);
+}
+
