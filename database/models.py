@@ -15,19 +15,11 @@ class Term(models.Model):
 class Blog(models.Model):
     title = CharField(default = "Enter your title", max_length=120)
     blog = TextField(default = "Enter your Blog")
-    date = DateField(default= timezone.now)
+    date = models.DateTimeField(default= timezone.now)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['-date',]
     
     def __str__(self):
         return self.title
-
-class test(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    title = models.CharField(max_length=60)
-
-    def __str__(self):
-        return self.title
-
-
-    def get_absolute_url(self):
-        return reverse('blogdatabase', kwargs={'pk': self.pk})

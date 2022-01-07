@@ -5,7 +5,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.db.models.base import Model
 from django.forms import fields
 from django.forms.models import ModelForm
-from database.models import Blog, test
+from database.models import Blog
 
 
 class Registration(UserCreationForm):

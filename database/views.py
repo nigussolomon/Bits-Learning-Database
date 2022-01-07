@@ -23,7 +23,7 @@ def blog_database(request):
         form = BlogForm(instance = request.user)
 
     context = {
-        'blog' : Blog.objects.all(),
+        'blog' : Blog.objects.all().order_by('-date'),
         'title':'BLOG',
         'form':form
     }
