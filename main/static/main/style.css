@@ -1,0 +1,224 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#body{
+    background: #000317;
+}
+
+.navsec{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000317;
+    z-index: 2;
+}
+
+.logo{
+    font-weight: bold;
+    color: #93FF54;
+}
+
+.navlinks{
+    text-align: right;
+    width: 60%;
+    color: #93FF54;
+    padding: 1%;
+}
+
+.navlinks a{
+    color: #93FF54;
+    text-decoration: none;
+    padding: .5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background: rgba(255, 255, 255, 0.178);
+    border-radius: 3px;
+    margin-left: 1%;
+    margin-right: 1%;
+    font-weight: 600;
+}
+
+.navlinks a:hover{
+    transition: all .2s,.4s ease-in-out;
+    background: #fff;
+    color: #000317;
+}
+
+#form{
+    margin-top: 1.5%;
+    margin-left: 2%;
+    width: 30%;
+    padding-left: 2%;
+    border-left: 5px solid #4989FF;
+}
+
+#form h1{
+    color: rgb(255, 255, 255);
+    margin-bottom: 4%;
+}
+
+.helptext{
+    display: none;
+}
+
+#form li{
+    color: red;
+    padding: 1%;
+    list-style: none;
+    margin-bottom: 2%;
+    border: 2px solid red;
+}
+
+#form label{
+    font-weight: bold;
+    color: #4989FF;
+}
+
+#form input{
+    width: 100%;
+    padding: 3%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    border: white;
+    border-radius: 5px;
+}
+
+#form input:focus{
+    outline: #4989FF;
+    box-shadow: 0 2px 3px 0 #4989FF;
+}
+
+#form input:active{
+    outline: none;
+    box-shadow: none;
+}
+
+#regbtn{
+    border-radius: 3px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-top: 3%;
+    padding: 2%;
+    background: #4989FF;
+    color: #000317;
+    border: 1px #4989FF;
+    margin-bottom: 3%;
+}
+
+#regbtn:hover{
+    background: rgb(255, 255, 255);
+    color: #000317;
+}
+
+#form p{
+    color: rgb(165, 165, 165);
+    font-size: 13px;
+    font-weight: normal;
+}
+
+#form a{
+    color: #4989FF;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+#form h3{
+    color: rgb(165, 165, 165);
+}
+
+#resign a{
+    color: #4989FF;
+    text-decoration: none;
+}
+
+.homediv{
+    padding: 5%;
+}
+
+.welcome h1{
+    font-weight: 900;
+    font-size: 60px;
+    color: white;
+    margin-bottom: 3%;
+}
+
+.detail{
+    width: 40%;
+    margin-bottom: 3%;
+}
+
+.detail p{
+    color: #c2d7ff;
+}
+
+.homelinks a{
+    margin-right: 1%;
+    padding: .6%;
+    border-radius: 3px;
+    background: #93FF54;
+    font-weight: bold;
+    font-size: 18px;
+    color: #000317;
+    text-decoration: none;
+}
+
+.homelinks a:hover{
+    transition: all .3s,.5s ease-in-out;
+    background: rgb(46, 46, 46);
+    color: white;
+}
+
+#signin{
+    background: rgb(255, 255, 255);
+    color: #000317;
+}
+
+#signin:hover{
+    transition: all .3s,.5s ease-in-out;
+    background: rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+}
+
+.blog{
+    width: 40%;
+    margin: 3%;
+    border: 1px solid rgba(255, 255, 255, 0.144);
+    border-left: 5px solid #93FF54;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+    padding-left: 0%;
+    margin-bottom: 1%;
+}
+
+.head h3{
+    color: #4989FF;
+    font-weight: bold;
+}
+
+.head h5{
+    color: #93FF54;
+    font-weight: bold;
+}
+
+.blog_detail{
+    color: #fff;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.foot h5{
+    color: rgb(165, 165, 165);
+}
+

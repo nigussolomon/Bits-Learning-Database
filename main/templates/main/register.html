@@ -1,0 +1,11 @@
+{% extends 'main/base.html' %}
+
+{% block regblock %}
+<form method= POST id="form">
+    <h1>SIGN UP</h1>
+    {% csrf_token %}
+    {{form}}
+    <button id="regbtn" type="submit">Create your account</button>
+    <p>Already have an account? <a href="{% url 'login' %}">Sign in</a></p>
+</form>
+{% endblock regblock %}

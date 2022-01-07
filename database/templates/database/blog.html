@@ -1,0 +1,23 @@
+{% extends 'database/base.html' %}
+
+{% block bloglogin %}
+<div class="blogskeleton">
+    {% for blog in blog %}
+    <div class="display">
+        <div class="blog">
+            <div class="head">
+                <h3>{{blog.title}}</h3>
+                <h5>{{blog.user}}</h5>
+            </div>
+            <hr>
+            <div class="blog_detail">
+                <p>{{blog.blog}}</p>
+            </div>
+            <div class="foot">
+                <h5>{{blog.date}}</h5>
+            </div>
+        </div>
+    </div>  
+    {% endfor %}
+</div>
+{% endblock bloglogin %}

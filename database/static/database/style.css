@@ -1,0 +1,148 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#logout{
+    color: rgb(255, 0, 0);
+    background: rgb(77, 77, 77);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 900;
+}
+
+#logout:hover{
+    transition: all .2s,.4s ease-in-out;
+    background: rgb(255, 0, 0);
+    color: rgb(5, 2, 41);
+    text-decoration: none;
+}
+
+.homelogin{
+    width: 60%;
+    margin: 3%;
+}
+
+.homelogin h1{
+    color: white;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.homelogin p{
+    margin-top: 4%;
+    font-size: 20px;
+    color: rgb(9, 255, 0);
+}
+
+.subject{
+    text-align: left;
+    z-index: -2;
+}
+
+.sub{
+    font-weight: bold;
+    color: rgb(5, 2, 41);
+    text-align: left;
+    width: 30%;
+    margin: 3%;
+    border: 1px solid rgb(9, 255, 0);
+    z-index: -2;
+    
+}
+
+.sub h1{
+    background: rgb(9, 255, 0);
+    padding: 1%;
+    padding-left: 2%;
+    border: 5px solid rgb(5, 2, 41);
+}
+
+.subtitles{
+    border: 5px solid rgb(5, 2, 41);
+    padding-bottom: 3%;
+    padding-top: 3%;
+    background: rgba(255, 255, 255, 0.144);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    z-index: -2;
+}
+
+.subtitles a{
+    display: block;
+    text-align: left;
+    padding-left: 2%;
+    text-decoration: underline 3px solid #4989FF;
+    color: #4989FF;
+    margin-bottom: 5%;
+    z-index: -3;
+}
+
+.headcs{
+    background: #000317;
+    color: #93FF54;
+    margin: 2%;
+    margin-bottom: 0%;
+}
+
+.termscs{
+    width: 60%;
+    margin: 3%;
+    padding: 1%;
+    border: 1px solid white;
+    border-left: 8px solid #93FF54;
+}
+
+.termscs h3{
+    color: #4989FF;
+    padding: 1%;
+}
+
+.termscs h5{
+    margin-top: 2%;
+    color: #fff;
+}
+
+.termscs p{
+    margin-top: 1%;
+    margin-left: 2%;
+    color: white;
+}
+
+.termscsbody{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 3%;
+    height: 70vh;
+    overflow-y: auto;
+}
+
+.navlist{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    border: 1px solid #4989FF;
+    border-left: 7px solid #4989FF;
+    border-radius: 2px;
+    height: 65vh;
+    width: 15%;
+    padding: 1%;
+    margin-right: 1%;
+    overflow-y: hidden;
+}
+
+.tag{
+    text-align: left;
+    margin-bottom: 5%;
+}
+
+.tag a{
+    color: #93FF54;
+}
+
+.tag a:hover{
+    color: #4989FF;
+    text-decoration: underline 3px #4989FF;
+}
+

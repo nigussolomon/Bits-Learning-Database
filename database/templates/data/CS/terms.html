@@ -1,0 +1,30 @@
+{% extends 'database/base.html' %}
+
+{% block terms %}
+
+    <div class="headcs">
+        <h2>Computer Systems Terms and Definitions</h2>
+    </div>
+
+    <div class="termscsbody">
+        <div class="datalist">
+            {% for data in data  %}
+                <div class="termscs" id="{{data.title}}">
+                    <h3>{{data.title}}</h3>
+                    <hr>
+                    <h5>Definition</h5>
+                    <p>{{data.defn}}</p>
+                </div>
+            {% endfor %}
+        </div>
+
+        <div class="navlist">
+            {% for data in data %}
+                <div class="tag">
+                    <a href="#{{data.title}}">{{data.title}}</a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock terms %}
