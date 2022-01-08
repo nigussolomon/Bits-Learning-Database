@@ -6,4 +6,6 @@ urlpatterns = [
     path('blog/', databaseviews.blog_database, name = 'blogdatabase'),
     path('termscs/', databaseviews.termscs, name="termscs"),
     path('termsse/', databaseviews.termsse, name="termsse"),
+    path('support/', databaseviews.support, name="support"),
+    path('bugreport/', databaseviews.bugreport, name="bugreport")
 ]

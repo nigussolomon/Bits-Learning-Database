@@ -5,7 +5,7 @@ from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
 from django.db.models.base import Model
 from django.forms import fields
 from django.forms.models import ModelForm
-from database.models import Blog
+from database.models import Blog, BugReport
 
 
 class Registration(UserCreationForm):
@@ -33,3 +33,9 @@ class BlogForm(ModelForm):
     class Meta:
         model = Blog
         fields = ['title', 'blog']
+
+class ContactForm(ModelForm):
+
+    class Meta:
+        model = BugReport
+        fields = ['bug', 'bug_detail']
