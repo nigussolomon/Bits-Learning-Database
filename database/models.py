@@ -5,12 +5,23 @@ from django.contrib.auth.models import User
 from django.urls import reverse
 
 # Create your models here.
-class Term(models.Model):
-    title = CharField(max_length=120)
-    defn = TextField()
+class TermCs(models.Model):
+    title = CharField(max_length=120, default="please enter the title")
+    defn = TextField(default="please enter the details")
     
     def __str__(self):
         return self.title
+
+
+
+class TermSe(models.Model):
+    title = CharField(max_length=120, default="please enter the title")
+    defn = TextField(default="please enter the details")
+    
+    def __str__(self):
+        return self.title
+
+
     
 class Blog(models.Model):
     title = CharField(default = "Enter your title", max_length=120)

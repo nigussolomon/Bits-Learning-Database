@@ -1,8 +1,8 @@
 from django.shortcuts import redirect, render
 from django.contrib.auth.decorators import login_required
-from . models import Term, Blog
+from . models import TermCs, Blog, TermSe
 from django.contrib.auth.models import User
-from  main.forms import BlogForm, TestForm
+from  main.forms import BlogForm
 
 # Create your views here.
 
@@ -30,12 +30,20 @@ def blog_database(request):
     return render(request, 'database/blog.html', context)
 
 @login_required
-def terms(request):
+def termscs(request):
     context = {
-        'data': Term.objects.all()
+        'datacs': TermCs.objects.all()
     }
     
     return render(request, 'data/CS/terms.html', context)
+
+
+def termsse(request):
+    context = {
+        'datase': TermSe.objects.all()
+    }
+    
+    return render(request, 'data/SE/terms.html', context)
 
 
 
