@@ -1,0 +1,10 @@
+{% extends 'database/base.html' %}
+
+{% block studentsupport %}
+<form method= POST id="form">
+    <h1>Tell Us Your Problem</h1>
+    {% csrf_token %}
+    {{form}}
+    <button id="regbtn" type="submit">Submit your Bug</button>
+</form>
+{% endblock studentsupport %}

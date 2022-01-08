@@ -25,12 +25,15 @@
         <div class="navlinks">
             <a href="{% url 'homemain' %}">HOME</a>
             <a href="{% url 'blogmain' %}">BLOG</a>
+            <a href="{% url 'mainsupport' %}">STUDENT SUPPORT</a>
         </div>
     </div>
     {% block regblock %} {% endblock regblock %}
     {% block homeblock %} {% endblock homeblock %}
     {% block byeblock %} {% endblock byeblock %}
     {% block blogmain %}{% endblock blogmain %}
+    {% block studentsupport %}{% endblock studentsupport %}
+    {% block support %}{% endblock support %}
 
 </body>
 </html>

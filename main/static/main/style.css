@@ -59,8 +59,8 @@
 }
 
 #form h1{
-    color: rgb(255, 255, 255);
-    margin-bottom: 4%;
+    color: #c2d7ff;
+    margin-bottom: 7%;
 }
 
 .helptext{
@@ -89,6 +89,24 @@
     border-radius: 1px;
 }
 
+#form #id_message{
+    width: 100%;
+    padding: 3%;
+    margin-top: 2%;
+    margin-bottom: 6%;
+    border: white;
+    border-radius: 1px;
+}
+
+#form #id_bug_detail{
+    width: 100%;
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 6%;
+    border: white;
+    border-radius: 1px;
+}
+
 #id_blog{
     width: 100%;
     padding: 3%;
@@ -103,7 +121,27 @@
     box-shadow: 0 2px 3px 0 #4989FF;
 }
 
+#form #id_message:focus{
+    outline: #4989FF;
+    box-shadow: 0 2px 3px 0 #4989FF;
+}
+
+#form #id_bug_detail:focus{
+    outline: #4989FF;
+    box-shadow: 0 2px 3px 0 #4989FF;
+}
+
 #form input:active{
+    outline: none;
+    box-shadow: none;
+}
+
+#form #id_message:active{
+    outline: none;
+    box-shadow: none;
+}
+
+#form #id_bug_detail:active{
     outline: none;
     box-shadow: none;
 }
@@ -146,8 +184,23 @@
     text-decoration: none;
 }
 
+#form hr{
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
 .homediv{
+    margin-top: 3%;
     padding: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.landingimg img{
+    width: 100%;
+    margin: 10%;
+    margin-right: 2%;
+    margin-top: 5%;
 }
 
 .welcome h1{
@@ -230,4 +283,25 @@
 .foot h5{
     color: rgb(165, 165, 165);
 }
+
+.support{
+    width: 60%;
+    padding: 5%;
+}
+
+.support h1{
+    color: #4989FF;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+
+.support a{
+    color: #93FF54;
+}
+
+.support p{
+    padding-top: 2%;
+    color: #c2d7ff;
+}
+
 

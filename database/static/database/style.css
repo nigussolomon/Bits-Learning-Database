@@ -35,18 +35,19 @@
 }
 
 .subject{
-    text-align: left;
-    z-index: -2;
+    margin-left: 1.6%;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
 }
 
 .sub{
     font-weight: bold;
     color: rgb(5, 2, 41);
     text-align: left;
-    width: 30%;
+    width: 80%;
     margin: 3%;
     border: 1px solid rgb(9, 255, 0);
-    z-index: -2;
     
 }
 
@@ -58,13 +59,8 @@
 }
 
 .subtitles{
-    border: 5px solid rgb(5, 2, 41);
     padding-bottom: 3%;
     padding-top: 3%;
-    background: rgba(255, 255, 255, 0.144);
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    z-index: -2;
 }
 
 .subtitles a{
@@ -74,7 +70,6 @@
     text-decoration: underline 3px solid #4989FF;
     color: #4989FF;
     margin-bottom: 5%;
-    z-index: -3;
 }
 
 .headcs{
@@ -84,31 +79,34 @@
     margin-bottom: 0%;
 }
 
-.termscs{
-    width: 60%;
+.terms{
+    width: 500%;
     margin: 3%;
-    padding: 1%;
-    border: 1px solid white;
+    margin-bottom: 20%;
+    padding: 8%;
+    border: 2px solid white;
+    border-radius: 5px;
     border-left: 8px solid #93FF54;
+    border-bottom: 8px solid #93FF54;
 }
 
-.termscs h3{
+.terms h3{
     color: #4989FF;
     padding: 1%;
 }
 
-.termscs h5{
+.terms h5{
     margin-top: 2%;
     color: #fff;
 }
 
-.termscs p{
+.terms p{
     margin-top: 1%;
     margin-left: 2%;
     color: white;
 }
 
-.termscsbody{
+.termsbody{
     display: flex;
     justify-content: space-between;
     margin-left: 2%;
@@ -148,7 +146,7 @@
 
 .bloginput{
     position: fixed;
-    top: 15%;
+    top: 11%;
     left: 50%;
 }
 
@@ -243,5 +241,49 @@
 
 #formblog h3{
     color: rgb(165, 165, 165);
+}
+
+.messagesdiv{
+    text-align: center;
+    width: 100%;
+}
+
+.messagesdiv li{
+    color: #93FF54;
+    padding: 1%;
+    list-style: none;
+    font-weight: 600;
+}
+
+.report{
+    padding: 2%;
+}
+
+.report h3{
+    color: #4989FF;
+}
+
+.report hr{
+    background: #fff;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.report h5,h4{
+    color: #93FF54;
+}
+
+#report_date{
+    color: #c2d7ff;
+    margin-top: .5%;
+}
+
+.report h4{
+    margin-bottom: 1%;
+}
+
+.report p{
+    color: #c2d7ff;
+    margin-bottom: .5%;
 }
 

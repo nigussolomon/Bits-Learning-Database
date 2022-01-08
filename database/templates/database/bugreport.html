@@ -1,0 +1,14 @@
+{% extends 'database/base.html' %}
+
+{% block bugreport %}
+{% for data in databr  %}
+    <div class="report">
+        <h3>{{data.bug}}</h3>
+        <hr>
+        <h4>Report Details</h4>
+        <p>{{data.bug_detail}}</p>
+        <h5>@{{data.user}}</h5>
+        <h5 id="report_date">{{data.date | date:"F d Y"}}</h5>
+    </div>
+{% endfor %}
+{% endblock bugreport %}

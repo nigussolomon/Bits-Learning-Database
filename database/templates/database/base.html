@@ -26,16 +26,30 @@
         <div class="navlinks">
             <a href="{% url 'homedatabase' %}">HOME</a>
             <a href="{% url 'blogdatabase' %}">BLOG</a>
+            {% if user.is_superuser %}
+            <a href="{% url 'bugreport' %}">BUG REPORT</a>
+            {% endif %}
+            <a href="{% url 'support' %}">STUDENT SUPPORT</a>
             <a id="logout" href="{% url 'logout' %}">LOGOUT</a>
         </div>
+    </div>
+
+    <div class="messagesdiv">
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <li {% if message.tags %} class=" {{ message.tags }} " {% endif %}> {{ message }} </li>
+                {% endfor %}
+            </ul>
+        {% endif %}
     </div>
 
     {% block bloglogin %} {% endblock bloglogin %}
     {% block homelogin %}{% endblock homelogin %}
     {% block blogpost %}{% endblock blogpost %}
     {% block terms %}{% endblock terms %}
-
-
+    {% block studentsupport %}{% endblock studentsupport %}
+    {% block bugreport %}{% endblock bugreport %}
 
 </body>
 </html>

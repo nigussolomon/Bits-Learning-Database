@@ -1,18 +1,24 @@
 {% extends 'main/base.html' %}
-
+{% load static %}
 {% block homeblock %}
 <div class="homediv">
-    <div class="welcome">
-        <h1>Welcome to the 
-            <br>
-            Bits Learning Database</h1>
+    <div class="landing">
+        <div class="welcome">
+            <h1>Welcome to the 
+                <br>
+                Bits Learning Database</h1>
+        </div>
+        <div class="detail">
+            <p>Bits Learning Database was created to help you with your studies and make finding resources easier. This database is periodically updated with fresh content and updated resources.</p>
+        </div>
+        <div class="homelinks">
+            <a href="{% url 'register' %}">Create account</a>
+            <a href="{% url 'login' %}" id="signin">Sign In</a>
+        </div>
     </div>
-    <div class="detail">
-        <p>Furthermore, one should not forget that the core principles cannot rely only on The Area of Contemporary Architecture Myles Silvers in The Book of the</p>
-    </div>
-    <div class="homelinks">
-        <a href="{% url 'register' %}">Create account</a>
-        <a href="{% url 'login' %}" id="signin">Sign In</a>
+
+    <div class="landingimg">
+        <img src="{% static "main/research.svg" %}" alt="">
     </div>
 </div>
 {% endblock homeblock %}

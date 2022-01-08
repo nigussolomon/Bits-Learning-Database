@@ -1,7 +1,8 @@
 {% extends 'main/base.html' %}
 {% block byeblock %}
 <form method= POST id="form">
-    <h3>You have been Logged out of your accont!</h3>
+    <h3>You have been Logged out!</h3>
+    <hr>
     <a id="resign" href="{% url 'login' %}">Sign In again</a>
 </form>
 {% endblock byeblock %}

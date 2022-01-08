@@ -25,3 +25,6 @@ def register(request):
         form = Registration()
         
     return render(request, 'main/register.html', {'form':form, 'title':'REGISTER'})
+
+def support(request):
+    return render(request, 'main/support.html', {'title':'SUPPORT'})
